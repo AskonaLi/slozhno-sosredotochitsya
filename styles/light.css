@@ -48,8 +48,7 @@
     }
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {  
+  @media (prefers-color-scheme: dark) {:root {  
       --heading-color:#DB00FF;
       --accent-color: #FF0070;
       --dark-color: #000028;
