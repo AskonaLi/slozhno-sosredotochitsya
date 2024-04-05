@@ -25,3 +25,22 @@
   --button-active-color: var(--outline-color);
     background-image: url(/images/cover-image-dark.png);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --heading-color: #DB00FF;
+    --accent-color: #FF0070;
+    --dark-color: #000028;
+    --paragraph-text-color: #F1B2CE;
+    --button-color-case: #d6cace;
+    --outline-color: #ff78b3;
+    --button-hover-color: #ffc1dc;
+    --shadow-head-color: var(--accent-color);
+    --text-color: var(--dark-color);
+    --question-color: var(--accent-color);
+    --border-color: var(--accent-color);
+    --button-color: var(--accent-color);
+    --border-hover-color: var(--paragraph-text-color);
+    --button-active-color: var(--outline-color);
+  }
+}
