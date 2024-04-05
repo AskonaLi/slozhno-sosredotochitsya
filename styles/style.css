@@ -11,7 +11,6 @@ html {
   overflow-x: hidden;
   background-image: url(/images/cover-image-dark.png);
   background-attachment: fixed;
-  background-color: black;
 }
 
 .header {
@@ -20,6 +19,12 @@ html {
   margin-block-end: 40px;
   padding-block-start: 10px;
   padding-inline: 10px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.right-side-text {
+  align-self: center;
 }
 
 .header::before,
@@ -82,8 +87,6 @@ html {
   flex-direction: column;
   gap: 10px;
   align-items: flex-end;
-  padding-block-start: 75px;
-  padding-block-end: 55px;
 }
 
 .header__theme-menu-button {
@@ -120,7 +123,7 @@ html {
   line-height: 0.85;
   color: var(--heading-color);
   text-shadow: 4px 4px 0 var(--shadow-head-color);
-  padding-block-end: 55px;
+  align-items: start;
 }
 
 .shadow-word {
@@ -261,7 +264,7 @@ html {
     padding-block-start: 20px;
     padding-inline: 20px;
     display: grid;
-    grid-template-rows: minmax(420px, 1fr) 1fr 1fr;
+    grid-template-rows: 1fr min-content 1fr;
   }
 
   .answers {
@@ -327,11 +330,11 @@ html {
   }
 
   .header-title {
-    margin-inline-start: -20px;
+    margin-inline-start: -35px;
   }
 
   .margin-right {
-    margin-left: 40px;
+    margin-left: 50px;
   }
 
   .footer {
@@ -355,8 +358,10 @@ html {
     margin-block-end: 60px;
     padding-block-start: 20px;
     padding-inline: 20px;
-    display: grid;
-    grid-template-rows: 20px auto auto;
+  }
+
+  .header__theme-menu {
+    align-self: start;
   }
 
   .header-title {
@@ -365,6 +370,7 @@ html {
 
   .right-side-text {
     align-self: center;
+    width: 54%;
   }
 
   .header__theme-menu-list {
@@ -376,9 +382,15 @@ html {
     padding-block-end: 0;
   }
 
+  .answers-grid-one {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 315px 1fr;
+  }
+
   .answers-grid-two {
     display: grid;
-    grid-template-columns: minmax(315px, 20%) 80%;
+    grid-template-columns: minmax(312px, 20%) 80%;
   }
 
   .grid-variants__answers {
