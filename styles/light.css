@@ -22,8 +22,8 @@
   --button-hover-color: #d6cace;
   --border-hover-color: var(--text-color);
   --button-active-color: var(--text-color);
-    background-image: url(/images/cover-image-light.png);
-    background-color: white;
+    background-image: url(./images/cover-image-light.png);
+    background-color: #ffeef6;
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,8 +43,12 @@
     }
     
     .page {
-      background-image: url(/images/cover-image-light.png);
-      background-color: white;
+      background-image: url(./images/cover-image-light.png);
+      background-color: #ffeef6;
+    }
+
+    .recording-logo {
+      display: none;
     }
   }
   

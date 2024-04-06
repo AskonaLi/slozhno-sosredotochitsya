@@ -1,20 +1,18 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-html {
-  height: 100%;
-}
 
 .page {
-  height: 100%;
+  min-height: 100%;
   background-color: var(--dark-color);
   font-family: var(--font-family);
-  overflow-x: hidden;
-  background-image: url(/images/cover-image-dark.png);
+  background-image: url(./images/cover-image-dark.png);
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .header {
   min-block-size: 668px;
+  height: 100vh;
   position: relative;
   margin-block-end: 40px;
   padding-block-start: 10px;
@@ -60,7 +58,7 @@ html {
   position: absolute;
   top: 10px;
   right: 19px;
-  height: 27px;
+  min-height: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +74,7 @@ html {
   width: 9px;
   height: 9px;
   background-color: var(--accent-color);
-  border-radius: 100%;
+  border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color);
   margin-left: 5px;
 }
@@ -98,6 +96,7 @@ html {
   font-size: var(--font-size);
   font-weight: var(--font-normal);
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -105,13 +104,13 @@ html {
   outline: 1px solid var(--button-hover-color);
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
 .header__theme-menu-button:focus-visible {
   outline: none;
   border-block-end: 1px solid var(--button-color);
-}
-
-.header__theme-menu-button:focus {
-  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -135,9 +134,13 @@ html {
   border-block-end: 1px solid var(--border-hover-color);
 }
 
+.shadow-word:focus-visible {
+  outline: 1px solid var(--border-hover-color)
+}
+
 .header-title-word,
 .footer-title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--logo-size);
 }
 
 .answers {
@@ -204,6 +207,7 @@ html {
 .footer {
   position: relative;
   min-height: 668px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,7 +261,12 @@ html {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (width >= 768px) {
+
+  :root {
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .header {
     min-block-size: 1024px;
     margin-block-end: 60px;
@@ -292,13 +301,13 @@ html {
     align-self: center;
   }
 
-  .right-side-text {
+  .side-text {
     width: 50%;
     margin-right: 0;
     justify-self: end;
   }
 
-  .answers-grid-one {
+  .answers-grid-why-how {
     display: grid;
     gap: 20px;
     grid-template-columns: 236px 1fr;
@@ -312,7 +321,7 @@ html {
     margin-block-start: 80px;
   }
 
-  .answers-grid-two {
+  .answers-grid-what {
     display: grid;
     grid-template-columns: minmax(236px, 20%) 80%;
   }
@@ -333,31 +342,24 @@ html {
     margin-inline-start: -35px;
   }
 
-  .margin-right {
-    margin-left: 50px;
-  }
-
   .footer {
     min-height: 1024px;
   }
 
   .header-title-word,
-.footer-title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-}
+  .footer-title {
+    font-size: var(--logo-size);
+  }
 
 .question__answers + .margin-block {
   margin-block-start: 0;
 }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (width >= 1024px) {
 
   .header {
     min-block-size: 768px;
-    margin-block-end: 60px;
-    padding-block-start: 20px;
-    padding-inline: 20px;
   }
 
   .header__theme-menu {
@@ -382,14 +384,11 @@ html {
     padding-block-end: 0;
   }
 
-  .answers-grid-one {
-    display: grid;
-    gap: 20px;
+  .answers-grid-why-how {
     grid-template-columns: 315px 1fr;
   }
 
-  .answers-grid-two {
-    display: grid;
+  .answers-grid-what {
     grid-template-columns: minmax(312px, 20%) 80%;
   }
 

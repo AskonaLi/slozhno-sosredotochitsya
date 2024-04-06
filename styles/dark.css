@@ -15,32 +15,38 @@
   --paragraph-text-color: #F1B2CE;
   --button-color-case: #d6cace;
   --outline-color: #ff78b3;
-  --button-hover-color: #ffc1dc;
+  --button-hover-color: #ff9dc8;
   --shadow-head-color: var(--accent-color);
   --text-color: var(--dark-color);
   --question-color: var(--accent-color);
   --border-color: var(--accent-color);
   --button-color: var(--accent-color);
   --border-hover-color: var(--paragraph-text-color);
-  --button-active-color: var(--outline-color);
-    background-image: url(/images/cover-image-dark.png);
+  --button-active-color: var(--accent-color);
+    background-image: url(./images/cover-image-dark.png);
+    background-color: #000028;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --heading-color: #DB00FF;
+    --heading-color:#DB00FF;
     --accent-color: #FF0070;
     --dark-color: #000028;
     --paragraph-text-color: #F1B2CE;
     --button-color-case: #d6cace;
     --outline-color: #ff78b3;
-    --button-hover-color: #ffc1dc;
+    --button-hover-color: #ff9dc8;
     --shadow-head-color: var(--accent-color);
     --text-color: var(--dark-color);
     --question-color: var(--accent-color);
     --border-color: var(--accent-color);
     --button-color: var(--accent-color);
     --border-hover-color: var(--paragraph-text-color);
-    --button-active-color: var(--outline-color);
+    --button-active-color: var(--accent-color);
+  }
+
+  .page {
+    background-image: url(./images/cover-image-dark.png);
+    background-color: #000028;
   }
 }

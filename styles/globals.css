@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
