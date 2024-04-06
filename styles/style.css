@@ -332,7 +332,7 @@ main + .footer {
     margin-block-start: 20px;
   }
 
-  .answers + .footer {
+  main + .footer {
     margin-block-start: 60px;
   }
 
@@ -398,5 +398,9 @@ main + .footer {
 
   .footer {
     min-height: 768px;
+  }
+  .header-title,
+  .footer-title {
+    text-shadow: 4px 4px 0 var(--shadow-head-color-max-size);
   }
 }

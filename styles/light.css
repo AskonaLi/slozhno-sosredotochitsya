@@ -17,7 +17,8 @@
   --paragraph-text-color: var(--text-color);
   --button-color-case: #ffc1dc;
   --question-color: var(--text-color);
-  --shadow-head-color: #FF0070;
+  --shadow-head-color: var(--accent-color);
+  --shadow-head-color-max-size: #FF0070;
   --border-color: var(--text-color);
   --button-hover-color: #d6cace;
   --border-hover-color: var(--text-color);
@@ -35,7 +36,8 @@
     --paragraph-text-color: var(--text-color);
     --button-color-case: #ffc1dc;
     --question-color: var(--text-color);
-    --shadow-head-color: #FF0070;
+    --shadow-head-color: var(--accent-color);
+    --shadow-head-color-max-size: #FF0070;
     --border-color: var(--text-color);
     --button-hover-color: #d6cace;
     --border-hover-color: var(--text-color);
