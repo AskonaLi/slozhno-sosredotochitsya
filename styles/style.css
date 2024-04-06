@@ -21,7 +21,8 @@
   grid-template-rows: 1fr min-content 1fr;
 }
 
-.right-side-text {
+.header__theme-menu,
+.side-text {
   align-self: center;
 }
 
@@ -78,7 +79,6 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
   margin-left: 5px;
 }
-
 
 .header__theme-menu-list {
   display: flex;
@@ -272,8 +272,6 @@
     margin-block-end: 60px;
     padding-block-start: 20px;
     padding-inline: 20px;
-    display: grid;
-    grid-template-rows: 1fr min-content 1fr;
   }
 
   .answers {
@@ -370,7 +368,7 @@
     align-self: end;
   }
 
-  .right-side-text {
+  .side-text {
     align-self: center;
     width: 54%;
   }
