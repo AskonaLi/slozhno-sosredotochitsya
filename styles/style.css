@@ -13,7 +13,6 @@
 .header {
   min-block-size: 668px;
   height: 100vh;
-  position: relative;
   margin-block-end: 40px;
   padding-block-start: 10px;
   padding-block-end: 10px;
@@ -27,9 +26,12 @@
   align-self: center;
 }
 
-/* Я надеюсь я правильно понял Ваше замечание, если это не так, пожалуйста, поясните в ревью что вы имеете ввиду под словом "Сущность", или, другими словами, что нужно переделать. Стили не совсем однотипны, для правых верхних углов я использую   border-block-start, border-inline-end, а для левых нижних   border-inline-start ,border-block-end */
+.corners {
+  height: 100vh;
+  position: relative;
+}
 
-.corner-r::before {
+.corners::before {
   content: '';
   position: absolute;
   border-block-start: 1px solid var(--border-color);
@@ -40,7 +42,7 @@
   right: 10px;
 }
 
-.corner-l::after {
+.corners::after {
   content: '';
   position: absolute;
   border-inline-start: 1px solid var(--border-color);
@@ -63,16 +65,16 @@
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--font-normal);
-  color: var(--accent-color);
+  color: var(--rec-color);
 }
 
 .recording-logo::after {
   content: '';
   width: 9px;
   height: 9px;
-  background-color: var(--accent-color);
+  background-color: var(--rec-color);
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--rec-color);
   margin-left: 5px;
 }
 
@@ -205,7 +207,6 @@
 }
 
 .footer {
-  position: relative;
   min-height: 668px;
   height: 100vh;
   display: flex;
@@ -285,12 +286,12 @@ main + .footer {
     right: 29px;
   }
 
-  .corner-r::before {
+  .corners::before {
     top: 20px;
     right: 20px;
   }
 
-  .corner-l::after {
+  .corners::after {
     left: 20px;
     bottom: 20px;
   }

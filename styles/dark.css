@@ -15,9 +15,10 @@
   --paragraph-text-color: #F1B2CE;
   --button-color-case: #d6cace;
   --outline-color: #ff78b3;
-  --button-hover-color: #ff91c1;
+  --button-hover-color: rgba(255, 0, 112, 0.4);
   --shadow-head-color: var(--accent-color);
   --shadow-head-color-max-size: var(--accent-color);
+  --rec-color: var(--accent-color);
   --text-color: var(--dark-color);
   --question-color: var(--accent-color);
   --border-color: var(--accent-color);
@@ -36,9 +37,10 @@
     --paragraph-text-color: #F1B2CE;
     --button-color-case: #d6cace;
     --outline-color: #ff78b3;
-    --button-hover-color: #ff91c1;
+    --button-hover-color: rgba(255, 0, 112, 0.4);
     --shadow-head-color: var(--accent-color);
     --shadow-head-color-max-size: var(--accent-color);
+    --rec-color: var(--accent-color);
     --text-color: var(--dark-color);
     --question-color: var(--accent-color);
     --border-color: var(--accent-color);

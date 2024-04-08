@@ -19,6 +19,7 @@
   --question-color: var(--text-color);
   --shadow-head-color: var(--accent-color);
   --shadow-head-color-max-size: #FF0070;
+  --rec-color: #ffeef6;
   --border-color: var(--text-color);
   --button-hover-color: #d6cace;
   --border-hover-color: var(--text-color);
@@ -38,6 +39,7 @@
     --question-color: var(--text-color);
     --shadow-head-color: var(--accent-color);
     --shadow-head-color-max-size: #FF0070;
+    --rec-color: #ffeef6;
     --border-color: var(--text-color);
     --button-hover-color: #d6cace;
     --border-hover-color: var(--text-color);
@@ -47,10 +49,6 @@
     .page {
       background-image: url(../images/cover-image-light.png);
       background-color: #ffeef6;
-    }
-
-    .recording-logo {
-      display: none;
     }
   }
   
