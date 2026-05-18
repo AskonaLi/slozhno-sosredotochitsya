@@ -1,0 +1,46 @@
+.page.theme_light {
+  --heading-color:#ffc2e6;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --button-color: var(--text-color);
+  --paragraph-text-color: var(--text-color);
+  --button-color-case: #ffc1dc;
+  --question-color: var(--text-color);
+  --shadow-head-color: var(--accent-color);
+  --shadow-head-color-max-size: #FF0070;
+  --rec-color: #ffeef6;
+  --border-color: var(--text-color);
+  --button-hover-color: #d6cace;
+  --border-hover-color: var(--text-color);
+  --button-active-color: var(--text-color);
+    background-image: url(../images/cover-image-light.png);
+    background-color: #ffeef6;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --heading-color:#ffc2e6;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --button-color: var(--text-color);
+    --paragraph-text-color: var(--text-color);
+    --button-color-case: #ffc1dc;
+    --question-color: var(--text-color);
+    --shadow-head-color: var(--accent-color);
+    --shadow-head-color-max-size: #FF0070;
+    --rec-color: #ffeef6;
+    --border-color: var(--text-color);
+    --button-hover-color: #d6cace;
+    --border-hover-color: var(--text-color);
+    --button-active-color: var(--text-color);
+    }
+    
+    .page {
+      background-image: url(../images/cover-image-light.png);
+      background-color: #ffeef6;
+    }
+  }
+   
+.page.theme_light .recording-logo {
+  display: none;
+}
