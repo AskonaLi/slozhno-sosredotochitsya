@@ -1,5 +1,7 @@
 [Ссылка на мой реппозиторий](https://github.com/AskonaLi/slozhno-sosredotochitsya)
 
+[Ссылка на мою работу на GitHub Pages](https://askonali.github.io/slozhno-sosredotochitsya/)
+
 [Ссылка на макет](https://www.figma.com/design/xEsVC5oxshXMFo4wlDcDev/%236-Сложно-сосредоточиться-(Copy)?node-id=0-1&p=f&t=RqgG7rilPOSrKc25-0)
 
 # Вёрстка статьи "Сложно сосредоточиться"
